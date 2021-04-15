@@ -21,6 +21,9 @@
 
 
 #include "Vektoria\Root.h"
+#include "CGeoPointCircle.h"
+#include "CGeoDreamCatcher.h"
+#include "CGeoPyramid.h"
 
 using namespace Vektoria;
 
@@ -40,13 +43,30 @@ public:
 private:
     // Hier ist Platz für Deine Vektoriaobjekte:
 	CRoot m_zr;
-	CFrame m_zf;
 	CScene m_zs;
+	CPlacement m_zpCamera;
+	CPlacement m_zpSphere;
+	CPlacement m_zpCircle;
+	CGeoSphere m_zgSphere;
+	CFrame m_zf;
 	CViewport m_zv;
 	CCamera m_zc;
-	CImage m_zi;
-	COverlay m_zo;
-	CPlacement m_zp;
+	CLightParallel m_zl;
+
+	CDeviceKeyboard m_zdk;
+	CMaterial m_zm;
+
+	//CGeoGrid m_gGrid;
+	//CPlacement m_pGrid;
+
+	CPlacement m_pSky;
+	CGeoSphere m_gSky;
+
+	CPlacement m_PlacePyramid;
+	CGeoPyramid* m_Pyramid = new CGeoPyramid();
+
+	CGeoDreamCatcher* pzgPointCircle = new CGeoDreamCatcher(3.0f);
+
 };
 
 

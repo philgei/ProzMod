@@ -16,17 +16,10 @@
 // Globale Variablen:
 // ------------------
 
-// Das Spiel
-CGame g_game;
-
-// Der Vektoria-Splash-Screen
-CSplash g_splash;
-
-// Flag, ob Fullscreen, per default in Nicht-Fullscreen gestartet
-static bool g_bFullscreen = false;
-
-// Boolsche Variable, wenn true, soll das Spiel beendet werden
-bool g_bQuit = false;
+TCHAR szClassName[] = TEXT("VektoriaWindowClass"); // Klassenname
+static bool g_bFullscreen = false; // Flag, ob Fullscreen, per default in Nicht-Fullscreen gestartet 
+CGame g_game; // Das Spiel:
+CSplash g_splash;// Der Vektoria-Splash-Screen
 
 // --------------------
 // Callback-Funktionen:
@@ -193,7 +186,6 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			break;
 
 	case WM_DESTROY:
-		g_bQuit = true;
 		PostQuitMessage(0);
 		break;
 
@@ -204,17 +196,11 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	return 0;
 }
 
-// ---------------
+
 // Eintrittspunkt:
-// ---------------
-
-
 int APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow)
 {
 	// INIT-Teil:
-
-	// Klassenname
-	TCHAR szClassName[] = TEXT("VektoriaWindowClass");
 
 	// Initialisierung des Fensters:
 	WNDCLASSA window_class = { 0 };
@@ -237,8 +223,9 @@ int APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmd
 		NULL, // Handle zum Menu => gibts nicht => 0
 		hInstance,
 		0   // Keine Fenstererzeugungsdaten
-	);
 
+	);
+	
 	if (!hwnd)
 	{
 		MessageBoxA(NULL, "CreateWindow failed!", "Vektoria", NULL);
@@ -248,9 +235,9 @@ int APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmd
 
 	ShowWindow(hwnd, SW_SHOW);
 
-	g_game.Init(hwnd, ChangeDisplay, &g_splash);
+	g_game.Init(hwnd, ChangeDisplay,&g_splash);
 
-	// Zeig den Splash-Screen:
+   // Zeig den Splash-Screen:
 	g_splash.Init(hwnd, hInstance);
 	g_splash.Show();
 
@@ -268,6 +255,10 @@ int APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmd
 	float fTimeLastShow = 0.0F;
 	bool bFirstTick = true;
 
+
+	// TICK-Teil: 
+	bool bQuit = false;
+
 	do
 	{
 		MSG msg;
@@ -275,7 +266,7 @@ int APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmd
 		{
 			if (msg.message == WM_QUIT)
 			{
-				g_bQuit = true;
+				bQuit = true;
 			}
 			else
 			{
@@ -304,7 +295,8 @@ int APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmd
 				bFirstTick = false;
 			}
 		}
-	} while (!g_bQuit);
+
+	} while (!bQuit);
 
 	// FINI-Teil:
 	g_game.Fini();
