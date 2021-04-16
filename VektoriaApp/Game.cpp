@@ -56,8 +56,11 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 
 	m_zv.SetBackfaceCullingOff();
 
-	m_zs.AddPlacement(&m_PlacePyramid);
-	m_PlacePyramid.AddGeo(m_Pyramid);
+	m_zs.AddPlacement(&m_pNPyramide);
+	m_pNPyramide.AddGeo(m_gNPyramide);
+
+	//m_zs.AddPlacement(&m_PlacePyramid);
+	//m_PlacePyramid.AddGeo(m_Pyramid);
 	//m_Pyramid->SetMaterial(&m_zm);
 	
 
@@ -67,6 +70,7 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 
 
 	m_zpCamera.TranslateZ(8.0f);
+
 	//m_zpCamera.TranslateY(2.0f);
 	//m_zpCamera.RotateX(-2.0f);
 
@@ -78,6 +82,7 @@ void CGame::Tick(float fTime, float fTimeDelta)
 
 	m_PlacePyramid.RotateY(fTime);
 	//m_PlacePyramid.RotateXDelta(fTime*13.45);
+	m_pNPyramide.RotateY(fTime);
 
 	m_zdk.PlaceWASD(m_zpCamera, fTimeDelta);
 	// Hier die Echtzeit-Veränderungen einfügen:
