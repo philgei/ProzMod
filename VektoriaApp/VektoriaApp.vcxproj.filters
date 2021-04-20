@@ -36,6 +36,9 @@
     <ClInclude Include="CGeoNPyramid.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -54,6 +57,9 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="CGeoNPyramid.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
