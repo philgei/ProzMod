@@ -25,6 +25,7 @@
 #include "CGeoDreamCatcher.h"
 #include "CGeoPyramid.h"
 #include "CGeoNPyramid.h"
+#include "CGeoBezierRing.h"
 
 using namespace Vektoria;
 
@@ -60,14 +61,17 @@ private:
 	//CGeoGrid m_gGrid;
 	//CPlacement m_pGrid;
 
-	CPlacement m_pNPyramide;
-	CGeoNPyramid* m_gNPyramide = new CGeoNPyramid(5.f, 7.f);
+	//CPlacement m_pNPyramide;
+	//CGeoNPyramid* m_gNPyramide = new CGeoNPyramid(5.f, 7.f);
 
 	CPlacement m_pSky;
 	CGeoSphere m_gSky;
 
-	CPlacement m_PlacePyramid;
-	CGeoPyramid* m_Pyramid = new CGeoPyramid();
+	//CPlacement m_PlacePyramid;
+	//CGeoPyramid* m_Pyramid = new CGeoPyramid();
+
+	CPlacement M_PlaceRing;
+	CGeoBezierRing* m_gRing = new CGeoBezierRing(20.f);
 
 	CGeoDreamCatcher* pzgPointCircle = new CGeoDreamCatcher(3.0f);
 

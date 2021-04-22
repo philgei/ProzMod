@@ -56,8 +56,14 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 
 	m_zv.SetBackfaceCullingOff();
 
-	m_zs.AddPlacement(&m_pNPyramide);
-	m_pNPyramide.AddGeo(m_gNPyramide);
+	m_zs.AddPlacement(&M_PlaceRing);
+	M_PlaceRing.AddGeo(m_gRing);
+
+	m_zv.SetBackfaceCullingOff();
+	//m_zv.SetWireframeOn();
+
+	//m_zs.AddPlacement(&m_pNPyramide);
+	//m_pNPyramide.AddGeo(m_gNPyramide);
 
 	//m_zs.AddPlacement(&m_PlacePyramid);
 	//m_PlacePyramid.AddGeo(m_Pyramid);
@@ -69,7 +75,7 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 	//m_zv.SetBloomStrengthNear(50);
 
 
-	m_zpCamera.TranslateZ(8.0f);
+	m_zpCamera.TranslateZ(30.0f);
 
 	//m_zpCamera.TranslateY(2.0f);
 	//m_zpCamera.RotateX(-2.0f);
@@ -80,9 +86,11 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 void CGame::Tick(float fTime, float fTimeDelta)
 {
 
-	m_PlacePyramid.RotateY(fTime);
+	//m_PlacePyramid.RotateY(fTime);
 	//m_PlacePyramid.RotateXDelta(fTime*13.45);
-	m_pNPyramide.RotateY(fTime);
+	//m_pNPyramide.RotateY(fTime);
+
+	//M_PlaceRing.RotateY(fTime);
 
 	m_zdk.PlaceWASD(m_zpCamera, fTimeDelta);
 	// Hier die Echtzeit-Veränderungen einfügen:
