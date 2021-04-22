@@ -20,5 +20,10 @@ CHVector Util::getFaceNormal(CHVector vec1, CHVector vec2, CHVector vec3)
     CHVector normal = CHVector(top, mid, bot, 0.0f);
     normal.Norm();
 
-    return normal;
+    //return normal;
+
+    normal = crossA ^ crossB;
+    normal.Norm();
+
+    return  normal;
 }

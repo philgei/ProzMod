@@ -61,8 +61,8 @@ private:
 	//CGeoGrid m_gGrid;
 	//CPlacement m_pGrid;
 
-	//CPlacement m_pNPyramide;
-	//CGeoNPyramid* m_gNPyramide = new CGeoNPyramid(5.f, 7.f);
+	CPlacement m_pNPyramide;
+	CGeoNPyramid* m_gNPyramide = new CGeoNPyramid(5.f, 7.f);
 
 	CPlacement m_pSky;
 	CGeoSphere m_gSky;
