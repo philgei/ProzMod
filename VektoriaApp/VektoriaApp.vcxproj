@@ -150,6 +150,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CGeoBezierRing.h" />
+    <ClInclude Include="CGeoBezierRingManual.h" />
     <ClInclude Include="CGeoDreamCatcher.h" />
     <ClInclude Include="CGeoNPyramid.h" />
     <ClInclude Include="CGeoPointCircle.h" />
@@ -161,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CGeoBezierRing.cpp" />
+    <ClCompile Include="CGeoBezierRingManual.cpp" />
     <ClCompile Include="CGeoDreamCatcher.cpp" />
     <ClCompile Include="CGeoNPyramid.cpp" />
     <ClCompile Include="CGeoPointCircle.cpp" />

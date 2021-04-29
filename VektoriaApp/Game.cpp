@@ -56,14 +56,17 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 
 	m_zv.SetBackfaceCullingOff();
 
-	m_zs.AddPlacement(&M_PlaceRing);
-	M_PlaceRing.AddGeo(m_gRing);
+	m_zs.AddPlacement(&m_placeBezierRing);
+	m_placeBezierRing.AddGeo(m_geoBezierRing);
+
+	m_zs.AddPlacement(&m_placeManualRing);
+	m_placeManualRing.AddGeo(m_geoManualRing);
 
 	m_zv.SetBackfaceCullingOff();
 	//m_zv.SetWireframeOn();
 
-	m_zs.AddPlacement(&m_pNPyramide);
-	m_pNPyramide.AddGeo(m_gNPyramide);
+	/*m_zs.AddPlacement(&m_pNPyramide);
+	m_pNPyramide.AddGeo(m_gNPyramide);*/
 
 	//m_zs.AddPlacement(&m_PlacePyramid);
 	//m_PlacePyramid.AddGeo(m_Pyramid);
@@ -88,7 +91,9 @@ void CGame::Tick(float fTime, float fTimeDelta)
 
 	//m_PlacePyramid.RotateY(fTime);
 	//m_PlacePyramid.RotateXDelta(fTime*13.45);
-	m_pNPyramide.RotateY(fTime);
+	//m_pNPyramide.RotateY(fTime);
+	m_placeManualRing.RotateY(fTime);
+	m_placeBezierRing.RotateY(fTime);
 
 	//M_PlaceRing.RotateY(fTime);
 

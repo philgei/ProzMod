@@ -26,6 +26,7 @@
 #include "CGeoPyramid.h"
 #include "CGeoNPyramid.h"
 #include "CGeoBezierRing.h"
+#include "CGeoBezierRingManual.h"
 
 using namespace Vektoria;
 
@@ -70,8 +71,11 @@ private:
 	//CPlacement m_PlacePyramid;
 	//CGeoPyramid* m_Pyramid = new CGeoPyramid();
 
-	CPlacement M_PlaceRing;
-	CGeoBezierRing* m_gRing = new CGeoBezierRing(20.f);
+	CPlacement m_placeBezierRing;
+	CGeoBezierRing* m_geoBezierRing = new CGeoBezierRing(20.f);
+
+	CPlacement m_placeManualRing;
+	CGeoBezierRingManual* m_geoManualRing = new CGeoBezierRingManual();
 
 	CGeoDreamCatcher* pzgPointCircle = new CGeoDreamCatcher(3.0f);
 
