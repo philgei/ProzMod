@@ -35,19 +35,6 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 	m_zpCamera.AddCamera(&m_zc);
 	
 	m_zs.AddPlacement(&m_pSky);
-	
-	/*m_pSky.AddGeo(&m_gSky);
-	m_pSky.SetSky();
-	m_gSky.Init(500, nullptr);
-	m_gSky.Flip();*/
-
-	//m_zpSphere.AddGeo(&m_zgSphere);
-	//m_zs.AddPlacement(&m_pGrid);
-
-	//m_pGrid.TranslateZ(-20.f);
-	//m_pGrid.AddGeo(&m_gGrid);
-	//m_gGrid.SetAxis(eAxisZ);
-	//m_gGrid.Init(20,20, nullptr, 20, 20);
 
 
 	m_zpCircle.AddGeo(pzgPointCircle);
@@ -59,26 +46,19 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 	m_zs.AddPlacement(&M_PlaceRing);
 	M_PlaceRing.AddGeo(m_gRing);
 
+	m_zs.AddPlacement(&m_pSierpinsky);
+	m_pSierpinsky.AddGeo(m_gSierpinsk);
+
 	m_zv.SetBackfaceCullingOff();
-	//m_zv.SetWireframeOn();
-
-	m_zs.AddPlacement(&m_pNPyramide);
-	m_pNPyramide.AddGeo(m_gNPyramide);
-
-	//m_zs.AddPlacement(&m_PlacePyramid);
-	//m_PlacePyramid.AddGeo(m_Pyramid);
-	//m_Pyramid->SetMaterial(&m_zm);
-	
-
-	//m_zv.SetBloomWidth(2);
-	//m_zv.SetBloomStrengthFar(50);
-	//m_zv.SetBloomStrengthNear(50);
 
 
 	m_zpCamera.TranslateZ(30.0f);
+	//m_zpCamera.TranslateY(20.0f);
 
-	//m_zpCamera.TranslateY(2.0f);
-	//m_zpCamera.RotateX(-2.0f);
+	m_pSierpinsky.Scale(0.9f);
+	//m_pSierpinsky.RotateZ(90);
+
+	m_zpCamera.SetTranslationSensitivity(3);
 
 
 }
@@ -88,7 +68,7 @@ void CGame::Tick(float fTime, float fTimeDelta)
 
 	//m_PlacePyramid.RotateY(fTime);
 	//m_PlacePyramid.RotateXDelta(fTime*13.45);
-	m_pNPyramide.RotateY(fTime);
+	//m_pNPyramide.RotateY(fTime);
 
 	//M_PlaceRing.RotateY(fTime);
 
