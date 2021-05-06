@@ -27,3 +27,20 @@ CHVector Util::getFaceNormal(CHVector vec1, CHVector vec2, CHVector vec3)
 
     return  normal;
 }
+
+CHVector Util::rotateZ(CHVector vec, float degree)
+{
+    float x = vec.GetX() * cos(degToRad(degree)) - vec.GetY() * sin(degToRad(degree));
+    float y = vec.GetX() * sin(degToRad(degree)) + vec.GetY() * cos(degToRad(degree));
+    return CHVector(x, y, vec.GetZ(), vec.GetW());
+}
+
+float Util::degToRad(float deg)
+{
+    return deg * PI / 180.f;
+}
+
+float Util::radToDeg(float rad)
+{
+    return rad / PI * 180.f;
+}

@@ -62,16 +62,16 @@ private:
 	//CPlacement m_pNPyramide;
 	//CGeoNPyramid* m_gNPyramide = new CGeoNPyramid(5.f, 7.f);
 
-	CPlacement m_pSierpinsky;
-	CGeoSierpinskyTriangle* m_gSierpinsk = new CGeoSierpinskyTriangle();
+	/*CPlacement m_pSierpinsky;
+	CGeoSierpinskyTriangle* m_gSierpinsk = new CGeoSierpinskyTriangle();*/
 
 	CPlacement m_pSky;
 	CGeoSphere m_gSky;
 
 
 
-	CPlacement M_PlaceRing;
-	CGeoBezierRing* m_gRing = new CGeoBezierRing(20.f);
+	CPlacement m_placeRing;
+	CGeoBezierRing* m_geoRing = new CGeoBezierRing(20.f);
 
 	CGeoDreamCatcher* pzgPointCircle = new CGeoDreamCatcher(3.0f);
 

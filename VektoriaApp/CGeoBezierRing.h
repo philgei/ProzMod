@@ -10,5 +10,6 @@ public:
     ~CGeoBezierRing();
 private:
     CHVector m_aav[4][4];
+    Util util;
 };
 

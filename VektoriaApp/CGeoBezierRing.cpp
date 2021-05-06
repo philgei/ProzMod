@@ -3,6 +3,7 @@
 CGeoBezierRing::CGeoBezierRing(float radius)
 {
 	int numberOfCuts = 3;
+	util = Util();
 
 	//for (int outter = 0; outter < 4; outter++) {
 	//	float add = outter * 90;
@@ -51,28 +52,38 @@ CGeoBezierRing::CGeoBezierRing(float radius)
 		float height = 2.4f;
 		float radius = 1.0f;
 		for (int i = 0; i < 4; i++) {
-			float degreeOfBegin = j * 90.0f; 
-			float rightY = sin(degreeOfBegin * PI / 180.f);
-			float rightX = cos(degreeOfBegin * PI / 180.f);
-			float leftY = sin((degreeOfBegin + 90.f) * PI / 180.f);
-			float leftX = cos((degreeOfBegin + 90.f) * PI / 180.f);
-			float sinus = sin(degreeOfBegin * PI / 180.f);
-			float cosinus = cos(degreeOfBegin * PI / 180.f);
+			float degBegin = j * 90.0f; 
+			//float rightY = sin(degreeOfBegin * PI / 180.f);
+			//float rightX = cos(degreeOfBegin * PI / 180.f);
+			//float leftY = sin((degreeOfBegin + 90.f) * PI / 180.f);
+			//float leftX = cos((degreeOfBegin + 90.f) * PI / 180.f);
+			//float sinus = sin(degreeOfBegin * PI / 180.f);
+			//float cosinus = cos(degreeOfBegin * PI / 180.f);
 
-			float cosinus0 = cos(degreeOfBegin * PI / 180.f);
-			float sinus0 = sin(degreeOfBegin * PI / 180.f);
-			float cosinus30 = cos((degreeOfBegin + 30.f) * PI / 180.f);
-			float sinus30 = sin((degreeOfBegin + 30.f) * PI / 180.f);
-			float sinus90 = sin((degreeOfBegin + 90.f) * PI / 180.f);
-			float cosinus90 = cos((degreeOfBegin + 90.f) * PI / 180.f);
+			//float cosinus0 = cos(degreeOfBegin * PI / 180.f);
+			//float sinus0 = sin(degreeOfBegin * PI / 180.f);
+			//float cosinus30 = cos((degreeOfBegin + 30.f) * PI / 180.f);
+			//float sinus30 = sin((degreeOfBegin + 30.f) * PI / 180.f);
+			//float sinus90 = sin((degreeOfBegin + 90.f) * PI / 180.f);
+			//float cosinus90 = cos((degreeOfBegin + 90.f) * PI / 180.f);
 			float displacement = cos(30.0f * PI / 180.f);// *radius;
-			m_aav[0][i] = CHVector(cosinus0, sinus0, height, 1.0f); // * radius // is save
+			//m_aav[0][i] = CHVector(cosinus0, sinus0, height, 1.0f); // * radius // is save
 
-			m_aav[1][i] = CHVector(cosinus0 + sinus0 * displacement,
-							sinus0, height, 1.0f);
-			m_aav[2][i] = CHVector(sinus0 + cosinus0 * displacement, sinus90, height, 1.0f);
+			//m_aav[1][i] = CHVector(cosinus0 + sinus0 * displacement,
+			//				sinus0, height, 1.0f);
+			//m_aav[2][i] = CHVector(sinus0 + cosinus0 * displacement, sinus90, height, 1.0f);
 
-			m_aav[3][i] = CHVector(cosinus90, sinus90, height, 1.0f); // is save
+			//m_aav[3][i] = CHVector(cosinus90, sinus90, height, 1.0f); // is save
+			CHVector stanni = CHVector(radius, 0, i, 1.0f);
+			CHVector ref = CHVector(cos(0), displacement, i, 0.f);
+			float len = ref.Length();
+			CHVector mid = CHVector(len, 0, i , 1.0f);
+			m_aav[0][i] = util.rotateZ(stanni, degBegin); // * radius // is save
+
+			m_aav[1][i] = util.rotateZ(mid, degBegin + 30.0f);
+			m_aav[2][i] = util.rotateZ(mid, degBegin + 60.0f);
+
+			m_aav[3][i] = util.rotateZ(stanni, degBegin + 90.0f); // is save
 		}
 		AddPatch(m_aav, 20, 20);
 	}

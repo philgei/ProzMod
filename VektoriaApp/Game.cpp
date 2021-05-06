@@ -43,11 +43,11 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 
 	m_zv.SetBackfaceCullingOff();
 
-	m_zs.AddPlacement(&M_PlaceRing);
-	M_PlaceRing.AddGeo(m_gRing);
+	m_zs.AddPlacement(&m_placeRing);
+	m_placeRing.AddGeo(m_geoRing);
 
-	m_zs.AddPlacement(&m_pSierpinsky);
-	m_pSierpinsky.AddGeo(m_gSierpinsk);
+	/*m_zs.AddPlacement(&m_pSierpinsky);
+	m_pSierpinsky.AddGeo(m_gSierpinsk);*/
 
 	m_zv.SetBackfaceCullingOff();
 
@@ -55,7 +55,7 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 	m_zpCamera.TranslateZ(30.0f);
 	//m_zpCamera.TranslateY(20.0f);
 
-	m_pSierpinsky.Scale(0.9f);
+	//m_pSierpinsky.Scale(0.9f);
 	//m_pSierpinsky.RotateZ(90);
 
 	m_zpCamera.SetTranslationSensitivity(3);
@@ -70,7 +70,7 @@ void CGame::Tick(float fTime, float fTimeDelta)
 	//m_PlacePyramid.RotateXDelta(fTime*13.45);
 	//m_pNPyramide.RotateY(fTime);
 
-	//M_PlaceRing.RotateY(fTime);
+	m_placeRing.RotateY(fTime);
 
 	m_zdk.PlaceWASD(m_zpCamera, fTimeDelta);
 	// Hier die Echtzeit-Veränderungen einfügen:
