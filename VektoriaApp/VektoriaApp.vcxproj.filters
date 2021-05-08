@@ -45,6 +45,12 @@
     <ClInclude Include="CGeoSierpinskyTriangle.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="CGeoBezierRingManual.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="CGeoCogwheel.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -72,6 +78,12 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="CGeoSierpinskyTriangle.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CGeoBezierRingManual.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CGeoCogwheel.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

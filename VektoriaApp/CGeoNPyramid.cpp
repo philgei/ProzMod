@@ -55,9 +55,13 @@ void CGeoNPyramid::VertexAdd(CHVector pos, CHVector normal)
 	/*CVertex vec = CVertex();
 	vec.Init(pos, pos.Normal(), vTangent, 0.0f, 0.0f);
 	AddVertex(&vec);*/
+	CVertex* addVec = new CVertex();
+	addVec->Init(pos, normal, vTangent, 0.0f, 0.0f);
+	AddVertex(addVec);
 
-	m_avertexPyramid[index].Init(pos, normal, vTangent, 0.0f, 0.0f);
+
+	/*m_avertexPyramid[index].Init(pos, normal, vTangent, 0.0f, 0.0f);
 	AddVertex(&m_avertexPyramid[index]);
-	index++;
+	index++;*/
 }
 
