@@ -71,7 +71,7 @@ private:
 
 
 	CPlacement m_placeRing;
-	CGeoBezierRing* m_geoRing = new CGeoBezierRing(20.f);
+	CGeoBezierRing* m_geoRing = new CGeoBezierRing(2.0f, 2.5f, 1.5f);
 
 	CGeoDreamCatcher* pzgPointCircle = new CGeoDreamCatcher(3.0f);
 
