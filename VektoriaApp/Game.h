@@ -28,6 +28,8 @@
 #include "CGeoBezierRing.h"
 #include "CGeoSierpinskyTriangle.h"
 #include "CGeoCogwheel.h"
+#include "CGeoGanjaPlant.h"
+#include "PlantGanja.h"
 
 using namespace Vektoria;
 
@@ -60,24 +62,10 @@ private:
 	CDeviceKeyboard m_zdk;
 	CMaterial m_zm;
 
-	CPlacement m_placeNPyramide;
-	CGeoNPyramid* m_geoNPyramide = new CGeoNPyramid(5.f, 7.f);
-
-	CPlacement m_pSierpinsky;
-	CGeoSierpinskyTriangle* m_gSierpinsk = new CGeoSierpinskyTriangle();
-
 	CPlacement m_pSky;
 	CGeoSphere m_gSky;
 
-
-
-	CPlacement m_placeRing;
-	CGeoBezierRing* m_geoRing = new CGeoBezierRing(2.0f, 2.5f, 1.5f);
-
-	CPlacement m_placeCogwheel;
-	CGeoCogwheel* m_geoCogwheel = new CGeoCogwheel(3.0f, 2.8f, 0.5f, 20);
-
-	//CGeoDreamCatcher* pzgPointCircle = new CGeoDreamCatcher(3.0f);
+	CPlantGanja m_placeGanja;
 
 };
 

@@ -36,32 +36,19 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 	
 	m_zs.AddPlacement(&m_pSky);
 
-
-	//m_zpCircle.AddGeo(pzgPointCircle);
-	//pzgPointCircle->SetMaterial(&m_zm);
 	m_zv.SetBloomOn();
 
 	m_zv.SetBackfaceCullingOff();
 
-	//m_zs.AddPlacement(&m_placeRing);
-	//m_placeRing.AddGeo(m_geoRing);
-
-	//m_zs.AddPlacement(&m_placeCogwheel);
-	//m_placeCogwheel.AddGeo(m_geoCogwheel);
-
-	m_zs.AddPlacement(&m_pSierpinsky);
-	m_pSierpinsky.AddGeo(m_gSierpinsk);
+	m_placeGanja.Init(1337, 1);
+	m_zs.AddPlacement(&m_placeGanja);
 
 	//m_zv.SetBackfaceCullingOff();
 
-	/*m_zs.AddPlacement(&m_placeNPyramide);
-	m_placeNPyramide.AddGeo(m_geoNPyramide);*/
+
 
 	m_zpCamera.TranslateZ(30.0f);
-	//m_zpCamera.TranslateY(20.0f);
 
-	//m_pSierpinsky.Scale(0.9f);
-	//m_pSierpinsky.RotateZ(90);
 
 	m_zpCamera.SetTranslationSensitivity(20);
 	m_zpCamera.SetRotationSensitivity(1);
@@ -71,17 +58,8 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 
 void CGame::Tick(float fTime, float fTimeDelta)
 {
-
-	//m_PlacePyramid.RotateY(fTime);
-	//m_PlacePyramid.RotateXDelta(fTime*13.45);
-	m_placeNPyramide.RotateY(fTime);
-
-	//m_placeRing.RotateY(fTime);
-
-	m_placeCogwheel.RotateY(fTime);
-
 	m_zdk.PlaceWASD(m_zpCamera, fTimeDelta);
-	// Hier die Echtzeit-Veränderungen einfügen:
+
 	m_zr.Tick(fTimeDelta);
 }
 

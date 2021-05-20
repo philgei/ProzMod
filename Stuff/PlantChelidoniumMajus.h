@@ -1,5 +1,5 @@
 #pragma once
-#include "Placement.h"
+#include "Vektoria\Root.h"
 #include "GeoBioChelidoniumMajus.h"
 
 //----------------------------------------------------------------------------
@@ -16,8 +16,8 @@
 #define PLANTCHELIDONIUMMAJUS_LODS 5
 
 
-namespace Vektoria
-{
+using namespace Vektoria
+
 	class CPlantChelidoniumMajus : public CPlacement
 	{
 	public:
@@ -56,4 +56,4 @@ namespace Vektoria
 		///<summary> Erzeugungsstatus </summary> 
 		EStatusConstruction m_eStatusConstruction = eStatusConstruction_Start;
 	};
-}
+

@@ -153,11 +153,13 @@
     <ClInclude Include="CGeoBezierRingManual.h" />
     <ClInclude Include="CGeoCogwheel.h" />
     <ClInclude Include="CGeoDreamCatcher.h" />
+    <ClInclude Include="CGeoGanjaPlant.h" />
     <ClInclude Include="CGeoNPyramid.h" />
     <ClInclude Include="CGeoPointCircle.h" />
     <ClInclude Include="CGeoPyramid.h" />
     <ClInclude Include="CGeoSierpinskyTriangle.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="PlantGanja.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Util.h" />
@@ -167,11 +169,13 @@
     <ClCompile Include="CGeoBezierRingManual.cpp" />
     <ClCompile Include="CGeoCogwheel.cpp" />
     <ClCompile Include="CGeoDreamCatcher.cpp" />
+    <ClCompile Include="CGeoGanjaPlant.cpp" />
     <ClCompile Include="CGeoNPyramid.cpp" />
     <ClCompile Include="CGeoPointCircle.cpp" />
     <ClCompile Include="CGeoPyramid.cpp" />
     <ClCompile Include="CGeoSierpinskyTriangle.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="PlantGanja.cpp" />
     <ClCompile Include="Util.cpp" />
     <ClCompile Include="VektoriaApp.cpp" />
   </ItemGroup>
