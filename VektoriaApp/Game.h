@@ -63,8 +63,8 @@ private:
 	CPlacement m_placeNPyramide;
 	CGeoNPyramid* m_geoNPyramide = new CGeoNPyramid(5.f, 7.f);
 
-	/*CPlacement m_pSierpinsky;
-	CGeoSierpinskyTriangle* m_gSierpinsk = new CGeoSierpinskyTriangle();*/
+	CPlacement m_pSierpinsky;
+	CGeoSierpinskyTriangle* m_gSierpinsk = new CGeoSierpinskyTriangle();
 
 	CPlacement m_pSky;
 	CGeoSphere m_gSky;

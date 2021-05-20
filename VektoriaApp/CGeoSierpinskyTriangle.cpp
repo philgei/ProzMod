@@ -2,25 +2,14 @@
 
 CGeoSierpinskyTriangle::CGeoSierpinskyTriangle()
 {
-    SetAxiom("x");
+	SetAxiom("X");
+	AddRule(
+		"X=!+(r0.8)_f[(l0.8)<_(r0.8)X][(l0.9)(>15)X]");
+	SetDefaultFactorGravitation(0.01);
 
-    //AddRule("f=f<f>f>f<f");
-    AddRule("x=(L0.2)(r0.5)f[<x]f[vx](r2.0)[>x]f[<x]>fx");
-    AddRule("f=<f>fvf^f");
-    // Setzte die Default-Winkel auf 120°:
-    /* SetDefaultAngles(TWOPI / 3.0f,
-        TWOPI / 3.0f, TWOPI / 3.0f); */
-
-        SetTurtleStartDir(CHVector(0, -1, 0, 0));
-
-    SetRootCutHeight(-10000);
-
-    SetDefaultAngles(UM_DEG2RAD(25),
-        UM_DEG2RAD(25),
-        UM_DEG2RAD(25));
 
     // Erzeuge das L-System:
-    Create(5);
+    Create(17);
 }
 
 CGeoSierpinskyTriangle::~CGeoSierpinskyTriangle()

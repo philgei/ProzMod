@@ -43,16 +43,16 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 
 	m_zv.SetBackfaceCullingOff();
 
-	/*m_zs.AddPlacement(&m_placeRing);
-	m_placeRing.AddGeo(m_geoRing);*/
+	//m_zs.AddPlacement(&m_placeRing);
+	//m_placeRing.AddGeo(m_geoRing);
 
-	m_zs.AddPlacement(&m_placeCogwheel);
-	m_placeCogwheel.AddGeo(m_geoCogwheel);
+	//m_zs.AddPlacement(&m_placeCogwheel);
+	//m_placeCogwheel.AddGeo(m_geoCogwheel);
 
-	/*m_zs.AddPlacement(&m_pSierpinsky);
-	m_pSierpinsky.AddGeo(m_gSierpinsk);*/
+	m_zs.AddPlacement(&m_pSierpinsky);
+	m_pSierpinsky.AddGeo(m_gSierpinsk);
 
-	m_zv.SetBackfaceCullingOff();
+	//m_zv.SetBackfaceCullingOff();
 
 	/*m_zs.AddPlacement(&m_placeNPyramide);
 	m_placeNPyramide.AddGeo(m_geoNPyramide);*/
