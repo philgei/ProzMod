@@ -54,9 +54,6 @@
     <ClInclude Include="CGeoGanjaPlant.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="PlantGanja.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -93,9 +90,6 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="CGeoGanjaPlant.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="PlantGanja.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

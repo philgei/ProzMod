@@ -2,6 +2,8 @@
 #include "Vektoria\Root.h"
 #include "CGeoGanjaPlant.h"
 
+#define GANJA_LOD 1
+
 using namespace Vektoria;
 
 class CPlantGanja : public CPlacement
@@ -17,10 +19,10 @@ public:
 
 
 	///<summary> Array mit den LoD-Unterplacements </summary> 
-	CPlacement m_aPlacementLoDs[5];//Number of LoDs
+	CPlacement m_aPlacementLoDs[GANJA_LOD];//Number of LoDs
 
 	///<summary> Array mit den LoD-Untergeometrien </summary> 
-	CGeoGanjaPlant m_aGeoLoDs[5];
+	CGeoGanjaPlant m_aGeoLoDs[GANJA_LOD];
 
 protected:
 

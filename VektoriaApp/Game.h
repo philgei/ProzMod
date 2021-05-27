@@ -65,8 +65,8 @@ private:
 	CPlacement m_pSky;
 	CGeoSphere m_gSky;
 
-	CPlantGanja m_placeGanja;
-
+	CPlacement m_placeGanja;
+	CGeoGanjaPlant m_GeoGanjaPlant;
 };
 
 

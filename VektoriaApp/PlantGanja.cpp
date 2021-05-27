@@ -16,7 +16,7 @@ void CPlantGanja::Init(int iRandomSeed, float fAge, float frTimeOfYear, float fR
 		return;
 	}
 
-	for (int j = 0; j < PLANTCHELIDONIUMMAJUS_LODS; j++)
+	for (int j = 0; j < GANJA_LOD; j++)
 	{
 		AddPlacement(&m_aPlacementLoDs[j]);
 		m_aPlacementLoDs[j].AddGeo(&m_aGeoLoDs[j]);
@@ -47,7 +47,7 @@ void CPlantGanja::Fini()
 		return;
 	}
 
-	for (int j = 0; j < PLANTCHELIDONIUMMAJUS_LODS; j++)
+	for (int j = 0; j < GANJA_LOD; j++)
 	{
 		m_aPlacementLoDs[j].SubGeo(&m_aGeoLoDs[j]);
 		SubPlacement(&m_aPlacementLoDs[j]);

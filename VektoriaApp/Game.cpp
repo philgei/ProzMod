@@ -40,14 +40,19 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 
 	m_zv.SetBackfaceCullingOff();
 
-	m_placeGanja.Init(1337, 1);
+	m_GeoGanjaPlant.SetRandomSeed(1337);
+
+	m_GeoGanjaPlant.Iterate(10);
+	m_GeoGanjaPlant.Init(&m_GeoGanjaPlant);
+
 	m_zs.AddPlacement(&m_placeGanja);
+	m_placeGanja.AddGeo(&m_GeoGanjaPlant);
 
 	//m_zv.SetBackfaceCullingOff();
 
 
 
-	m_zpCamera.TranslateZ(30.0f);
+	m_zpCamera.TranslateZ(10.0f);
 
 
 	m_zpCamera.SetTranslationSensitivity(20);
@@ -59,6 +64,8 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 void CGame::Tick(float fTime, float fTimeDelta)
 {
 	m_zdk.PlaceWASD(m_zpCamera, fTimeDelta);
+
+	m_placeGanja.RotateY(fTime);
 
 	m_zr.Tick(fTimeDelta);
 }
