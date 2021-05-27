@@ -11,20 +11,21 @@
 
 	void CGeoGanjaPlant::Iterate(float fAge, float frTimeOfYear, float fRootCutHeight)
 	{
+
+		//Fragen: warum m_fTurtleStartLength und dann noch SetTurtleStartHeight(1)???
 		m_fAgeStopped = fAge;
 
 
 		m_iIterations = fAge;
 		m_iTurtleStartLongitude = 15;
 		m_iTurtleStartLattitude = 23;
-		m_fTurtleStartLength = 1;
-		m_fTurtleStartRadius = 0.02f;
 
-		SetDefaultAngles(HALFPI, HALFPI, HALFPI);
+
+		SetDefaultAngles(HALFPI/2, HALFPI/2, HALFPI/2);
 		SetDefaultFactorGravitation(0.1f);
-		SetDefaultFactorSide(0.0f);
-		SetTurtleStartHeight(m_fTurtleStartLength);
-		SetTurtleStartRadius(m_fTurtleStartRadius);
+		SetDefaultFactorSide(0.01f);
+		SetTurtleStartHeight(1);
+		SetTurtleStartRadius(0.04);
 		//------------------------
 		// Erzeuge Stamm und Geäst:
 		//------------------------
@@ -35,9 +36,13 @@
 		// B: Blütenverzweigung
 		// Y: Blüte
 
-		// Soll Blüten (Y) ausbilden, wenn Stägelradius unter einem mm:
+		// Soll Blüten (Y) ausbilden, wenn Stägelra6dius unter einem mm:
 
 		SetAxiom("A");
+
+		AddRule("A=/(l0.9)(r0.95)+f[<Z][>Z]A");
+		AddRule("Z=(l0.01)(r0.3)f(l50)X");
+		AddRule("X=!f(l0.5)X");
 
 		//	AddRule("A=f(<70)fZ");
 
@@ -49,8 +54,8 @@
 			AddRule("30:A=(l0.1)(^15)f(l10)f[°(<20)fX][°(>23)fX][°°(v53)fX](+5)[°°(^63)fX][°(<12)fX]");
 			*/
 		
-		AddRule("A=(r0.7)f[(r0.05)<Z][(r0.05)>Z]+A");
-		AddRule("Z={l>0.05, (l0.7)fZ}");
+		//AddRule("A=(r0.7)f[(r0.05)<Z][(r0.05)>Z]+A");
+		//AddRule("Z={l>0.05, (l0.7)fZ}");
 		//AddRule("Z=(<50)(r0.5)(l0.01)f(l100)(r0.5)f");
 		//AddRule("50:Z=(r0.2)(>50)f(r5.0)");
 		//AddRule("50:A=(l0.1)f(l10)f[°(<90)f(>80)X][°(>90)f(<80)fX][°(^90)f(v80)fX]");
