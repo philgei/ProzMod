@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Headerdateien\Oli">
+      <UniqueIdentifier>{cfa2921f-2515-4e21-af6a-68d7e5d4de17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Oli">
+      <UniqueIdentifier>{6a9ddef7-282c-4b13-beda-3c79bd399c31}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -48,11 +54,17 @@
     <ClInclude Include="CGeoBezierRingManual.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="CGeoCogwheel.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="CGeoGanjaPlant.h">
       <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="CGeoCogwheel.h">
+      <Filter>Headerdateien\Oli</Filter>
+    </ClInclude>
+    <ClInclude Include="CGears.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="CGeoCogwheelv2.h">
+      <Filter>Headerdateien\Oli</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -86,11 +98,17 @@
     <ClCompile Include="CGeoBezierRingManual.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="CGeoCogwheel.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="CGeoGanjaPlant.cpp">
       <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CGeoCogwheel.cpp">
+      <Filter>Quelldateien\Oli</Filter>
+    </ClCompile>
+    <ClCompile Include="CGears.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CGeoCogwheelv2.cpp">
+      <Filter>Quelldateien\Oli</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

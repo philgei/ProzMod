@@ -1,6 +1,6 @@
-#include "CGeoCogwheel.h"
+#include "CGeoCogwheelv2.h"
 
-CGeoCogwheel::CGeoCogwheel(float outterRadius, float innerRadius, float height, int numberOfGearPinions)
+CGeoCogwheelv2::CGeoCogwheelv2(float outterRadius, float innerRadius, float height, int numberOfGearPinions)
 {
 	m_outterRadius = outterRadius;
 	m_innerRadius = innerRadius;
@@ -22,12 +22,12 @@ CGeoCogwheel::CGeoCogwheel(float outterRadius, float innerRadius, float height, 
 	//AddBot(0.f);
 }
 
-CGeoCogwheel::~CGeoCogwheel()
+CGeoCogwheelv2::~CGeoCogwheelv2()
 {
 
 }
 
-void CGeoCogwheel::init()
+void CGeoCogwheelv2::init()
 {
 	//m_avertexCogwheel = new CVertex[8 * m_numberOfGearPinions];
 	float radOfDisplacement = 360.0f / m_numberOfGearPinions / 2.0f;
@@ -35,13 +35,13 @@ void CGeoCogwheel::init()
 	bot = CHVector(0.0f, 0.0f, 0.0f, 1.0f);
 	mid = CHVector(m_outterRadius, 0, 0, 1.0f);
 
-	left =	rotateY(radOfDisplacement,	CHVector(m_innerRadius, 0, 0, 1.0f));
+	left = rotateY(radOfDisplacement, CHVector(m_innerRadius, 0, 0, 1.0f));
 	right = rotateY(-radOfDisplacement, CHVector(m_innerRadius, 0, 0, 1.0f));
 }
 
 
 
-void CGeoCogwheel::AddLeft(float deg)
+void CGeoCogwheelv2::AddLeft(float deg)
 {
 	CHVector midBot = rotateY(deg, mid);
 	CHVector midTop = translateY(m_height, rotateY(deg, mid));
@@ -55,7 +55,7 @@ void CGeoCogwheel::AddLeft(float deg)
 
 }
 
-void CGeoCogwheel::AddRight(float deg)
+void CGeoCogwheelv2::AddRight(float deg)
 {
 	CHVector midBot = rotateY(deg, mid);
 	CHVector midTop = translateY(m_height, rotateY(deg, mid));
@@ -68,7 +68,7 @@ void CGeoCogwheel::AddRight(float deg)
 	TriangleAdd(midBot, rightTop, midTop);
 }
 
-void CGeoCogwheel::AddBot(float deg)
+void CGeoCogwheelv2::AddBot(float deg)
 {
 	// 2 Bot Triangles bot -> mid -> left + bot -> right -> mid
 	CHVector midTmp = rotateY(deg, mid);
@@ -78,7 +78,7 @@ void CGeoCogwheel::AddBot(float deg)
 	TriangleAdd(bot, rightTmp, midTmp);
 }
 
-void CGeoCogwheel::AddTop(float deg)
+void CGeoCogwheelv2::AddTop(float deg)
 {
 	CHVector midTmp = translateY(m_height, rotateY(deg, mid));
 	CHVector leftTmp = translateY(m_height, rotateY(deg, left));
@@ -87,7 +87,7 @@ void CGeoCogwheel::AddTop(float deg)
 	TriangleAdd(top, midTmp, rightTmp);
 }
 
-void CGeoCogwheel::VertexAdd(CHVector pos, CHVector normal)
+void CGeoCogwheelv2::VertexAdd(CHVector pos, CHVector normal)
 {
 	/*CVertex vertexAdd;
 	vertexAdd.Init(pos, normal, tangent, 0.0f, 0.0f);*/
@@ -101,7 +101,7 @@ void CGeoCogwheel::VertexAdd(CHVector pos, CHVector normal)
 	index++;*/
 }
 
-void CGeoCogwheel::TriangleAdd(CHVector vec1, CHVector vec2, CHVector vec3)
+void CGeoCogwheelv2::TriangleAdd(CHVector vec1, CHVector vec2, CHVector vec3)
 {
 	CHVector normal = getFaceNormal(vec1, vec2, vec3); //get Triangle normal here
 	//get CrossProduct of Triangle //TODO LATER
@@ -113,19 +113,19 @@ void CGeoCogwheel::TriangleAdd(CHVector vec1, CHVector vec2, CHVector vec3)
 	VertexAdd(vec3, normal);
 }
 
-CHVector CGeoCogwheel::rotateY(float angle, CHVector vec)
+CHVector CGeoCogwheelv2::rotateY(float angle, CHVector vec)
 {
 	float x = vec.GetX() * cos(angle * PI / 180.f) - vec.GetZ() * sin(angle * PI / 180.f);
 	float z = vec.GetX() * sin(angle * PI / 180.f) + vec.GetZ() * cos(angle * PI / 180.f);
 	return CHVector(x, 0, z, 1.0f);
 }
 
-CHVector CGeoCogwheel::translateY(float delta, CHVector vec)
+CHVector CGeoCogwheelv2::translateY(float delta, CHVector vec)
 {
 	return CHVector(vec.GetX(), vec.GetY() + delta, vec.GetZ(), vec.GetW());
 }
 
-CHVector CGeoCogwheel::getFaceNormal(CHVector vec1, CHVector vec2, CHVector vec3)
+CHVector CGeoCogwheelv2::getFaceNormal(CHVector vec1, CHVector vec2, CHVector vec3)
 {
 	CHVector crossA = CHVector(vec2.GetX() - vec1.GetX(), vec2.GetY() - vec1.GetY(), vec2.GetZ() - vec1.GetZ(), 0.f);
 	CHVector crossB = CHVector(vec3.GetX() - vec1.GetX(), vec3.GetY() - vec1.GetY(), vec3.GetZ() - vec1.GetZ(), 0.f);

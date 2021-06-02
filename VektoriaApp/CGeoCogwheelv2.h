@@ -2,11 +2,11 @@
 #include "Vektoria\Root.h"
 using namespace Vektoria;
 
-class CGeoCogwheel : public CGeoTriangleList
+class CGeoCogwheelv2 : public CGeoTriangleList
 {
 public:
-	CGeoCogwheel(float outterRadius, float innerRadius, float height, int numberOfGearPinions);
-	~CGeoCogwheel();
+	CGeoCogwheelv2(float outterRadius, float depth, float height, int numberOfGearPinions);
+	~CGeoCogwheelv2();
 	//CVertex* m_avertexCogwheel;
 private:
 	float m_outterRadius;
@@ -14,8 +14,10 @@ private:
 	float m_height;
 	float m_numberOfGearPinions;
 	float radOfDisplacement;
+	float m_outterDistance;
+	float m_innerDistance;
 	//int index;
-	
+
 	CHVector top;
 	CHVector bot;
 	CHVector mid;

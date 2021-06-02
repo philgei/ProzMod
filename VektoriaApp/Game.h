@@ -65,8 +65,11 @@ private:
 	CPlacement m_pSky;
 	CGeoSphere m_gSky;
 
-	CPlacement m_placeGanja;
-	CGeoGanjaPlant m_GeoGanjaPlant;
+	/*CPlacement m_placeGanja;
+	CGeoGanjaPlant m_GeoGanjaPlant;*/
+
+	CPlacement m_placementCogwheel;
+	CGeoCogwheel* m_geoCogwheel = new CGeoCogwheel(4,3,2,32);
 };
 
 

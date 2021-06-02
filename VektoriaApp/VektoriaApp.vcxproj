@@ -149,9 +149,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CGears.h" />
     <ClInclude Include="CGeoBezierRing.h" />
     <ClInclude Include="CGeoBezierRingManual.h" />
     <ClInclude Include="CGeoCogwheel.h" />
+    <ClInclude Include="CGeoCogwheelv2.h" />
     <ClInclude Include="CGeoDreamCatcher.h" />
     <ClInclude Include="CGeoGanjaPlant.h" />
     <ClInclude Include="CGeoNPyramid.h" />
@@ -164,9 +166,11 @@
     <ClInclude Include="Util.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CGears.cpp" />
     <ClCompile Include="CGeoBezierRing.cpp" />
     <ClCompile Include="CGeoBezierRingManual.cpp" />
     <ClCompile Include="CGeoCogwheel.cpp" />
+    <ClCompile Include="CGeoCogwheelv2.cpp" />
     <ClCompile Include="CGeoDreamCatcher.cpp" />
     <ClCompile Include="CGeoGanjaPlant.cpp" />
     <ClCompile Include="CGeoNPyramid.cpp" />
