@@ -13,17 +13,20 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 	// Hier die Initialisierung Deiner Vektoria-Objekte einfügen:
 	m_zr.Init(psplash);
 	m_zc.Init(QUARTERPI);
-	// m_zf.SetApiRender(eApiRender_DirectX11_Shadermodel50_Monolight);
+
 	m_zf.Init(hwnd, procOS); 
 	m_zv.InitFull(&m_zc);
 	m_zl.Init(CHVector(1.0f, 1.0f, 1.0f), CColor(1.0f, 1.0f, 1.0f));
-	//m_zgSphere.Init(1.5F, nullptr, 50, 50);
+
 
 	m_zf.AddDeviceKeyboard(&m_zdk);
 
 	//m_zm.LoadPreset("Sun");
 	m_zm.MakeTextureGlow("textures\\ENV.jpg");
 	//m_zm.SetGlowStrength(30);
+
+	m_zs.SetSkyOn(&m_zpCamera);
+	//m_zs.SetSkyFlowOn(1200);
 
 	m_zr.AddFrame(&m_zf);
 	m_zf.AddViewport(&m_zv);
@@ -40,6 +43,8 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 
 	m_zv.SetBackfaceCullingOff();
 
+
+
 	/*m_GeoGanjaPlant.SetRandomSeed(1337);
 
 	m_GeoGanjaPlant.Iterate(10);
@@ -51,25 +56,53 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 	//m_zv.SetBackfaceCullingOff();
 	m_zv.SetBackfaceCullingOn();
 
-	m_zs.AddPlacement(&m_placementCogwheel);
-	m_placementCogwheel.AddGeo(m_geoCogwheel);
+	//m_zs.AddPlacement(&m_placementCogwheel);
+	//m_placementCogwheel.AddGeo(m_geoCogwheel);
 
 
-	m_zpCamera.TranslateZ(10.0f);
+	m_zpCamera.Translate(10, 0, 100);
 
 
-	m_zpCamera.SetTranslationSensitivity(20);
+	m_zpCamera.SetTranslationSensitivity(50);
 	m_zpCamera.SetRotationSensitivity(1);
 
+	m_pTropical.init();
+
+	m_zs.AddPlacement(&m_pTropical);
+
+	m_Birke.SetRandomSeed(42);
+	m_Birke.Iterate(10.0f, 0.40f, 0.0f);
+	m_Birke.Init(&m_Birke, 0);
+
+	m_zs.AddPlacement(&m_pBirke);
+
+	//float height = m_pTropical.m_zgTerrain.GetHeight(20, 20);
+
+	//m_pBirke.Translate(20, height, 20);
+
+	m_pBirke.AddGeo(&m_Birke);
 
 }
 
 void CGame::Tick(float fTime, float fTimeDelta)
 {
-	m_zdk.PlaceWASD(m_zpCamera, fTimeDelta);
+	//m_zdk.PlaceWASD(m_zpCamera, fTimeDelta);
+
+
+	m_zdk.PlaceWASDTerrain(
+		m_zpCamera,
+		m_pTropical.m_gCol,
+		m_pTropical.m_gHeight,
+		m_pTropical.m_gsTerrain,
+		4.0f,
+		3000.0f,
+		m_HitpointCollision,
+		m_HitpointGround,
+		fTimeDelta);
+
 
 	//m_placeGanja.RotateY(fTime);
-	m_placementCogwheel.RotateY(fTime);
+	//m_placementCogwheel.RotateY(fTime);
 
 	m_zr.Tick(fTimeDelta);
 }

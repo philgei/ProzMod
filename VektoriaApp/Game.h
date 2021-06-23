@@ -30,6 +30,7 @@
 #include "CGeoCogwheel.h"
 #include "CGeoGanjaPlant.h"
 #include "PlantGanja.h"
+#include "CTropicalIsland.h"
 
 using namespace Vektoria;
 
@@ -65,11 +66,21 @@ private:
 	CPlacement m_pSky;
 	CGeoSphere m_gSky;
 
+	CTropicalIsland m_pTropical;
+
+	CGeoBioBirch m_Birke;
+	CPlacement m_pBirke;
+
+	//Used for WASD
+	CHitPoint m_HitpointGround;
+	CHitPoint m_HitpointCollision;
+
+
 	/*CPlacement m_placeGanja;
 	CGeoGanjaPlant m_GeoGanjaPlant;*/
 
-	CPlacement m_placementCogwheel;
-	CGeoCogwheel* m_geoCogwheel = new CGeoCogwheel(4,3,2,32);
+	//CPlacement m_placementCogwheel;
+	//CGeoCogwheel* m_geoCogwheel = new CGeoCogwheel(4,3,2,32);
 };
 
 

@@ -1,0 +1,118 @@
+#include "CTropicalIsland.h"
+
+CTropicalIsland::CTropicalIsland()
+{
+}
+
+CTropicalIsland::~CTropicalIsland()
+{
+	delete m_pperlin;
+	delete m_pblob;
+}
+
+void CTropicalIsland::init()
+{
+	// Erzeuge einen Cut, der alles unter N.N. wegschneidet: 
+	//m_cutUnderSea.SetHeightLimits(-F_MAX, 0.0f);
+	// Die Vertices der den Rand überlappenden Polygone werden 
+	// auf N.N. angehoben:
+	//m_cutUnderSea.SetFlattenLowerOn();
+	// Und in der XZ-Ebenemittels Bézier „glattgezurrt“:
+	//m_cutUnderSea.SetFlattenSmartOn();
+	// Füge den Cut dem Terrain hinzu:
+	//m_zgTerrain.AddCut(&m_cutUnderSea);
+	// Erzeuge Perlin-Noise:
+	//m_pperlin = new CPerlin(42, 3.0f, 12, 0.5f, 5.0f, 0.0f,
+	//	0.0f, ePerlinInterpol_Standard, false);
+
+	// Lade die Texturen für Wasser und Land: 
+	m_zmWater.LoadPreset("Water");
+	//m_zmEarth.LoadPreset("RockMossy");
+	// Mische den Perlin-Noise mit einem radialen Blob: 
+
+
+//Perlin_____________________________________________________________
+
+	m_pperlin = new CPerlin(
+		42, // Zufallsseed
+		5.0f, // Amplitude
+		7, // Oktaven
+		0.5f, // Persistenz
+		0.5f, // Frequenz
+		1.0f, // X-Verschiebung
+		1.0f, // Y-Verschiebung
+		ePerlinInterpol_Standard, // Interpolationsart 
+		false); // Repetivität
+
+//Blobs____________________________________________________________
+	m_pElevator = new CBlob(
+		0.5f, 0.5f,// Mittelpunkt des Blobs (u und v)
+		0.51f, 0.51f,// Radius des Blobs (u und v)
+		-0.3f,// Höhe des Blobs
+		eBlobShapeGround_Rect,
+		eBlobShapeSide_All,
+		nullptr);
+
+	CBlob* pLandMass = new CBlob(
+		0.5f, 0.5f, // Mittelpunkt des Blobs (u und v)
+		0.4f, 0.4f, // Radius des Blobs (u und v)
+		2.0f, // Höhe des Blobs
+		eBlobShapeGround_Radial, // Grundflächentopologie
+		eBlobShapeSide_Hill, // Höhenverlaufstopologie
+		m_pperlin); // Optinaler Pointer auf eine 
+		// Perlin-Noise-Instanz (kommt später)
+
+	CBlob* pblob = new CBlob(
+		0.5f, 0.5f, // Mittelpunkt des Blobs (u und v)
+		0.01f, 0.01f, // Radius des Blobs (u und v)
+		10.2f, // Höhe des Blobs
+		eBlobShapeGround_Radial, // Grundflächentopologie
+		eBlobShapeSide_Hill, // Höhenverlaufstopologie
+		m_pperlin); // Optinaler Pointer auf eine 
+		// Perlin-Noise-Instanz (kommt später)
+
+	// Füge den Blob einem Blaupausen-Terrain hinzu:
+	m_zgTerrainOri.AddBlob(m_pElevator);
+	m_zgTerrainOri.AddBlob(pLandMass);
+	//m_zgTerrainOri.AddBlob(pblob);
+
+
+
+	// Erzeuge die Vertex-Daten des Blaupausen-Terrains:
+	m_zgTerrainOri.CreateField(
+		2000, 2000, // Ein Quadratkilometer Terrain
+		1000, 1000, // 2000 auf 2000 Vertices
+		0.0f, 0.0f, // Die UV-Textur beginnt bei (0,0) …
+		1.0f, 1.0f);// … und geht bis (1,1)
+
+	// Erzeuge mit dem Terraindaten eine Terraingeometrie: 
+	m_zgTerrain.InitFromOther(m_zgTerrainOri, nullptr);
+	// Erzeuge die Wasseroberfläche:
+	m_zgWater.Init(
+		70000, 70000, // Das Meer ist groß (70 *70 qm)
+		&m_zmWater, // Ein bewegtes Wassermaterial mit Wellen
+		10, 10, // Brauchen nur wenige Polygone (hier 100)
+		0.0f, 0.0f, // Eine UV-Verschiebung brauchen wir nicht
+		500.0f, // Aber die Textur soll sich 500 Mal … 
+		500.0f); // …in jeder Richtung wiederholen
+		// Hänge die Geometrien an ein geeignetes Placement:
+	AddGeo(&m_zgTerrain);
+	AddGeo(&m_zgWater);
+	// Füge das Terrain dem Kollisionscontainer hinzu:
+	m_zgsTerrain.Add(&m_zgTerrain);
+}
+
+CGeos CTropicalIsland::getCollisionContainer()
+{
+	return m_zgsCol;
+}
+
+CGeos CTropicalIsland::getCollisionHeight()
+{
+	return m_zgsHeight;
+}
+
+CGeoTerrains CTropicalIsland::getTerrain()
+{
+	return m_zgsTerrain;
+}

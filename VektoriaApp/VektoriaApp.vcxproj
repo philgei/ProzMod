@@ -160,6 +160,7 @@
     <ClInclude Include="CGeoPointCircle.h" />
     <ClInclude Include="CGeoPyramid.h" />
     <ClInclude Include="CGeoSierpinskyTriangle.h" />
+    <ClInclude Include="CTropicalIsland.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="targetver.h" />
@@ -177,6 +178,7 @@
     <ClCompile Include="CGeoPointCircle.cpp" />
     <ClCompile Include="CGeoPyramid.cpp" />
     <ClCompile Include="CGeoSierpinskyTriangle.cpp" />
+    <ClCompile Include="CTropicalIsland.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Util.cpp" />
     <ClCompile Include="VektoriaApp.cpp" />

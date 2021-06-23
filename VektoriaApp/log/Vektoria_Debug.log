@@ -3,6 +3,138 @@ Vektoria-Logfile
 
 ****************
 Ok:    Distribudted Graphics API established
+Ok:    Loading VEKTORIA
+Ok:    Loading E
+Ok:    Loading E155
+Ok:    Loading P157
+Ok:    Loading G158
+Ok:    Loading M156
+Ok:    Loading T195
+Ok:    Loading I194
+Ok:    Loading T197
+Ok:    Loading I196
+Ok:    Loading T199
+Ok:    Loading I198
+Ok:    Loading T201
+Ok:    Loading I200
+Ok:    Loading E159
+Ok:    Loading P161
+Ok:    Loading G162
+Ok:    Loading M160
+Ok:    Loading T203
+Ok:    Loading I202
+Ok:    Loading T205
+Ok:    Loading I204
+Ok:    Loading T207
+Ok:    Loading I206
+Ok:    Loading T209
+Ok:    Loading I208
+Ok:    Loading P163
+Ok:    Loading A164
+Ok:    Loading E165
+Ok:    Loading P167
+Ok:    Loading G168
+Ok:    Loading M166
+Ok:    Loading T211
+Ok:    Loading I210
+Ok:    Loading T213
+Ok:    Loading I212
+Ok:    Loading T215
+Ok:    Loading I214
+Ok:    Loading T217
+Ok:    Loading I216
+Ok:    Loading P169
+Ok:    Loading A170
+Ok:    Loading VEKTORIA
+Ok:    Loading M
+Ok:    Loading T495
+Ok:    Loading I494
+Ok:    Loading VEKTORIA
+Ok:    Loading M
+Ok:    Loading T230
+Ok:    Loading I231
+Ok:    Loading VEKTORIA
+Ok:    Loading E
+Ok:    Loading P26
+Ok:    Loading G27
+Ok:    Loading M25
+Ok:    Loading T42
+Ok:    Loading I41
+Ok:    Loading VEKTORIA
+Ok:    Loading E
+Ok:    Loading P29
+Ok:    Loading G30
+Ok:    Loading M28
+Ok:    Loading T45
+Ok:    Loading I44
+Ok:    Loading T47
+Ok:    Loading I46
+Ok:    Loading VEKTORIA
+Ok:    Loading M
+Ok:    Loading T493
+Ok:    Loading I492
+Ok:    Loading VEKTORIA
+Ok:    Loading M
+Ok:    Loading T491
+Ok:    Loading I490
+Ok:    Loading VEKTORIA
+Ok:    Loading M
+Ok:    Loading T443
+Ok:    Loading I444
+Ok:    Loading T445
+Ok:    Loading I446
+Ok:    Loading T447
+Ok:    Loading I448
+Ok:    Loading VEKTORIA
+Ok:    Loading M
+Ok:    Loading T509
+Ok:    Loading I510
+Ok:    Loading T511
+Ok:    Loading I512
+Ok:    Loading T513
+Ok:    Loading I514
+Ok:    Loading T515
+Ok:    Loading I516
+Ok:    Loading VEKTORIA
+Ok:    Loading M
+Ok:    Loading T509
+Ok:    Loading I510
+Ok:    Loading T511
+Ok:    Loading I512
+Ok:    Loading T513
+Ok:    Loading I514
+Ok:    Loading T515
+Ok:    Loading I516
+Ok:    Loading VEKTORIA
+Ok:    Loading M
+Ok:    Loading T473
+Ok:    Loading I474
+Ok:    Loading T475
+Ok:    Loading I476
+Ok:    Loading T477
+Ok:    Loading I478
+Error: AddRule: Illegal character in number inside (...)-Brackets: ,
+Ok:    Loading VEKTORIA
+Ok:    Loading M
+Ok:    Loading T509
+Ok:    Loading I510
+Ok:    Loading T511
+Ok:    Loading I512
+Ok:    Loading T513
+Ok:    Loading I514
+Ok:    Loading T515
+Ok:    Loading I516
+Ok:    Loading VEKTORIA
+Ok:    Loading M
+Ok:    Loading T313062
+Ok:    Loading I313061
+Ok:    Loading T313066
+Ok:    Loading I313065
+Ok:    Loading T313064
+Ok:    Loading I313063
+Ok:    Loading T313068
+Ok:    Loading I313067
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
 Ok:    Collected materials in virtual hierarchy
 Ok:    Collected materials in real hierarchy
 Ok:    Cyberglasses API established
@@ -13,3 +145,288 @@ Ok:    Scenes created
 Ok:    Hierarchy checked.
 Ok:    Materials created
 Ok:    Viewports created
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  In CGeoTerrain::GetHitPoint: No Vertices in Terrain.
+Warn:  

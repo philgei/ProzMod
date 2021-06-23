@@ -19,6 +19,12 @@
     <Filter Include="Quelldateien\Oli">
       <UniqueIdentifier>{6a9ddef7-282c-4b13-beda-3c79bd399c31}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Headerdateien\Philipp">
+      <UniqueIdentifier>{794bb457-cda4-429c-b949-abc9e9dd3c83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Philipp">
+      <UniqueIdentifier>{8eb89ad2-d0ae-4598-aa70-d36929cef2c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -66,6 +72,9 @@
     <ClInclude Include="CGeoCogwheelv2.h">
       <Filter>Headerdateien\Oli</Filter>
     </ClInclude>
+    <ClInclude Include="CTropicalIsland.h">
+      <Filter>Headerdateien\Philipp</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -109,6 +118,9 @@
     </ClCompile>
     <ClCompile Include="CGeoCogwheelv2.cpp">
       <Filter>Quelldateien\Oli</Filter>
+    </ClCompile>
+    <ClCompile Include="CTropicalIsland.cpp">
+      <Filter>Quelldateien\Philipp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
