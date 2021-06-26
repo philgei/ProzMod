@@ -149,6 +149,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CCustomBezierBoat.h" />
     <ClInclude Include="CGears.h" />
     <ClInclude Include="CGeoBezierRing.h" />
     <ClInclude Include="CGeoBezierRingManual.h" />
@@ -167,6 +168,7 @@
     <ClInclude Include="Util.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CCustomBezierBoat.cpp" />
     <ClCompile Include="CGears.cpp" />
     <ClCompile Include="CGeoBezierRing.cpp" />
     <ClCompile Include="CGeoBezierRingManual.cpp" />

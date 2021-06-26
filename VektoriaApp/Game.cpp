@@ -16,14 +16,10 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 
 	m_zf.Init(hwnd, procOS); 
 	m_zv.InitFull(&m_zc);
+
 	m_zl.Init(CHVector(1.0f, 1.0f, 1.0f), CColor(1.0f, 1.0f, 1.0f));
 
-
 	m_zf.AddDeviceKeyboard(&m_zdk);
-
-	//m_zm.LoadPreset("Sun");
-	m_zm.MakeTextureGlow("textures\\ENV.jpg");
-	//m_zm.SetGlowStrength(30);
 
 	m_zs.SetSkyOn(&m_zpCamera);
 	//m_zs.SetSkyFlowOn(1200);
@@ -39,48 +35,34 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 	
 	m_zs.AddPlacement(&m_pSky);
 
-	m_zv.SetBloomOn();
-
 	m_zv.SetBackfaceCullingOff();
 
-
-
-	/*m_GeoGanjaPlant.SetRandomSeed(1337);
-
-	m_GeoGanjaPlant.Iterate(10);
-	m_GeoGanjaPlant.Init(&m_GeoGanjaPlant);
-
-	m_zs.AddPlacement(&m_placeGanja);
-	m_placeGanja.AddGeo(&m_GeoGanjaPlant);*/
-
-	//m_zv.SetBackfaceCullingOff();
-	m_zv.SetBackfaceCullingOn();
-
-	//m_zs.AddPlacement(&m_placementCogwheel);
-	//m_placementCogwheel.AddGeo(m_geoCogwheel);
-
-
-	m_zpCamera.Translate(10, 0, 100);
+	//m_zpCamera.Translate(10, 0, 100);
 
 
 	m_zpCamera.SetTranslationSensitivity(50);
 	m_zpCamera.SetRotationSensitivity(1);
 
-	m_pTropical.init();
+	//m_pTropical.init();
 
-	m_zs.AddPlacement(&m_pTropical);
+	//m_zs.AddPlacement(&m_pTropical);
 
-	m_Birke.SetRandomSeed(42);
-	m_Birke.Iterate(10.0f, 0.40f, 0.0f);
-	m_Birke.Init(&m_Birke, 0);
+	//m_Birke.SetRandomSeed(42);
+	//m_Birke.Iterate(10.0f, 0.40f, 0.0f);
+	//m_Birke.Init(&m_Birke, 0);
 
-	m_zs.AddPlacement(&m_pBirke);
+	//m_zs.AddPlacement(&m_pBirke);
 
-	//float height = m_pTropical.m_zgTerrain.GetHeight(20, 20);
+	//float height = m_pTropical.m_TerrainStrand.GetHeight(20, 20);
 
 	//m_pBirke.Translate(20, height, 20);
 
-	m_pBirke.AddGeo(&m_Birke);
+	//m_pBirke.AddGeo(&m_Birke);
+
+	m_Boat.Init();
+
+	m_zs.AddPlacement(&m_Boat);
+
 
 }
 
@@ -100,9 +82,6 @@ void CGame::Tick(float fTime, float fTimeDelta)
 		m_HitpointGround,
 		fTimeDelta);
 
-
-	//m_placeGanja.RotateY(fTime);
-	//m_placementCogwheel.RotateY(fTime);
 
 	m_zr.Tick(fTimeDelta);
 }

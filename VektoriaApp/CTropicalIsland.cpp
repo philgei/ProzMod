@@ -144,8 +144,8 @@ void CTropicalIsland::init()
 		&m_materialWater, // Ein bewegtes Wassermaterial mit Wellen
 		10, 10, // Brauchen nur wenige Polygone (hier 100)
 		0.0f, 0.0f, // Eine UV-Verschiebung brauchen wir nicht
-		500.0f, // Aber die Textur soll sich 500 Mal … 
-		500.0f); // …in jeder Richtung wiederholen
+		900.0f, // Aber die Textur soll sich 500 Mal … 
+		900.0f); // …in jeder Richtung wiederholen
 
 
 //Geos anhängen_________________________________________________

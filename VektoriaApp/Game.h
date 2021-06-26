@@ -31,6 +31,7 @@
 #include "CGeoGanjaPlant.h"
 #include "PlantGanja.h"
 #include "CTropicalIsland.h"
+#include "CCustomBezierBoat.h"
 
 using namespace Vektoria;
 
@@ -48,7 +49,6 @@ public:
 	void WindowReSize(int iNewWidth, int iNewHeight);											// Wird immer dann aufgerufen, wenn der Benutzer die Fenstergröße verändert hat
 
 private:
-    // Hier ist Platz für Deine Vektoriaobjekte:
 	CRoot m_zr;
 	CScene m_zs;
 	CPlacement m_zpCamera;
@@ -58,15 +58,14 @@ private:
 	CFrame m_zf;
 	CViewport m_zv;
 	CCamera m_zc;
+
 	CLightParallel m_zl;
 
 	CDeviceKeyboard m_zdk;
-	CMaterial m_zm;
 
 	CPlacement m_pSky;
 	CGeoSphere m_gSky;
 
-	CTropicalIsland m_pTropical;
 
 	CGeoBioBirch m_Birke;
 	CPlacement m_pBirke;
@@ -75,12 +74,10 @@ private:
 	CHitPoint m_HitpointGround;
 	CHitPoint m_HitpointCollision;
 
+	//Stuff für Abgabe
+	CTropicalIsland m_pTropical;
+	CCustomBezierBoat m_Boat = CCustomBezierBoat(12.0f, 4.0f, 2.0f, 0.5f);
 
-	/*CPlacement m_placeGanja;
-	CGeoGanjaPlant m_GeoGanjaPlant;*/
-
-	//CPlacement m_placementCogwheel;
-	//CGeoCogwheel* m_geoCogwheel = new CGeoCogwheel(4,3,2,32);
 };
 
 

@@ -75,6 +75,9 @@
     <ClInclude Include="CTropicalIsland.h">
       <Filter>Headerdateien\Philipp</Filter>
     </ClInclude>
+    <ClInclude Include="CCustomBezierBoat.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -113,14 +116,17 @@
     <ClCompile Include="CGeoCogwheel.cpp">
       <Filter>Quelldateien\Oli</Filter>
     </ClCompile>
-    <ClCompile Include="CGears.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="CGeoCogwheelv2.cpp">
       <Filter>Quelldateien\Oli</Filter>
     </ClCompile>
     <ClCompile Include="CTropicalIsland.cpp">
       <Filter>Quelldateien\Philipp</Filter>
+    </ClCompile>
+    <ClCompile Include="CCustomBezierBoat.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CGears.cpp">
+      <Filter>Quelldateien\Oli</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
