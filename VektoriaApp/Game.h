@@ -76,7 +76,10 @@ private:
 
 	//Stuff für Abgabe
 	CTropicalIsland m_pTropical;
-	CCustomBezierBoat m_Boat = CCustomBezierBoat(12.0f, 4.0f, 2.0f, 0.5f);
+	CCustomBezierBoat m_Boat = CCustomBezierBoat(16.0f, 5.0f, 2.05f, 0.8f);
+
+
+	CHVector camPostForDebug;
 
 };
 

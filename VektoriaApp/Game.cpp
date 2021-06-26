@@ -43,9 +43,9 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 	m_zpCamera.SetTranslationSensitivity(50);
 	m_zpCamera.SetRotationSensitivity(1);
 
-	//m_pTropical.init();
+	m_pTropical.init();
 
-	//m_zs.AddPlacement(&m_pTropical);
+	m_zs.AddPlacement(&m_pTropical);
 
 	//m_Birke.SetRandomSeed(42);
 	//m_Birke.Iterate(10.0f, 0.40f, 0.0f);
@@ -53,12 +53,14 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 
 	//m_zs.AddPlacement(&m_pBirke);
 
-	//float height = m_pTropical.m_TerrainStrand.GetHeight(20, 20);
+	float height = m_pTropical.m_TerrainStrand.GetHeight(20, 20);
 
 	//m_pBirke.Translate(20, height, 20);
 
 	//m_pBirke.AddGeo(&m_Birke);
 
+	m_Boat.Translate(-130.60f, 1.5f, -161.6);
+	//m_zpCamera.Translate(-130.60f, 0, -161.6);
 	m_Boat.Init();
 
 	m_zs.AddPlacement(&m_Boat);
@@ -70,6 +72,7 @@ void CGame::Tick(float fTime, float fTimeDelta)
 {
 	//m_zdk.PlaceWASD(m_zpCamera, fTimeDelta);
 
+	camPostForDebug = m_zpCamera.GetPos();
 
 	m_zdk.PlaceWASDTerrain(
 		m_zpCamera,
