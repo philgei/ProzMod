@@ -37,34 +37,19 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 
 	m_zv.SetBackfaceCullingOff();
 
-	//m_zpCamera.Translate(10, 0, 100);
-
 
 	m_zpCamera.SetTranslationSensitivity(50);
 	m_zpCamera.SetRotationSensitivity(1);
-
+	//Insel
 	m_pTropical.init();
-
 	m_zs.AddPlacement(&m_pTropical);
-
-	//m_Birke.SetRandomSeed(42);
-	//m_Birke.Iterate(10.0f, 0.40f, 0.0f);
-	//m_Birke.Init(&m_Birke, 0);
-
-	//m_zs.AddPlacement(&m_pBirke);
-
-	float height = m_pTropical.m_TerrainStrand.GetHeight(20, 20);
-
-	//m_pBirke.Translate(20, height, 20);
-
-	//m_pBirke.AddGeo(&m_Birke);
-
+	//Boot
 	m_Boat.Translate(-130.60f, 1.5f, -161.6);
-	//m_zpCamera.Translate(-130.60f, 0, -161.6);
 	m_Boat.Init();
-
 	m_zs.AddPlacement(&m_Boat);
-
+	//Hütte
+	m_Hut.build();
+	m_zs.AddPlacement(&m_Hut);
 
 }
 

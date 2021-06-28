@@ -21,6 +21,8 @@ private:
 	CGeoBezierTable m_GeoRight;
 	CGeoBezierTable m_GeoLeft;
 
+	CGeoBezierTable m_GeoSeat1;
+
 
 	Util util;
 };

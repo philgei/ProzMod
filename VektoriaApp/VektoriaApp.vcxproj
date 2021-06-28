@@ -155,6 +155,7 @@
     <ClInclude Include="CGeoBezierRingManual.h" />
     <ClInclude Include="CGeoCogwheel.h" />
     <ClInclude Include="CGeoCogwheelv2.h" />
+    <ClInclude Include="CGeoCustomTropicalHut.h" />
     <ClInclude Include="CGeoDreamCatcher.h" />
     <ClInclude Include="CGeoGanjaPlant.h" />
     <ClInclude Include="CGeoNPyramid.h" />
@@ -174,6 +175,7 @@
     <ClCompile Include="CGeoBezierRingManual.cpp" />
     <ClCompile Include="CGeoCogwheel.cpp" />
     <ClCompile Include="CGeoCogwheelv2.cpp" />
+    <ClCompile Include="CGeoCustomTropicalHut.cpp" />
     <ClCompile Include="CGeoDreamCatcher.cpp" />
     <ClCompile Include="CGeoGanjaPlant.cpp" />
     <ClCompile Include="CGeoNPyramid.cpp" />

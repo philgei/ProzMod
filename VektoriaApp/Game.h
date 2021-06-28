@@ -32,6 +32,7 @@
 #include "PlantGanja.h"
 #include "CTropicalIsland.h"
 #include "CCustomBezierBoat.h"
+#include "CGeoCustomTropicalHut.h"
 
 using namespace Vektoria;
 
@@ -76,7 +77,8 @@ private:
 
 	//Stuff für Abgabe
 	CTropicalIsland m_pTropical;
-	CCustomBezierBoat m_Boat = CCustomBezierBoat(16.0f, 5.0f, 2.05f, 0.8f);
+	CCustomBezierBoat m_Boat = CCustomBezierBoat(16.0f, 5.0f, 1.5f, 0.8f);
+	CGeoCustomTropicalHut m_Hut;
 
 
 	CHVector camPostForDebug;

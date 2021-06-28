@@ -3,6 +3,15 @@
 //Ich habe außerdem keine möglichkeit gefunden, in Vektoria ein Modell zu Spiegeln.
 //Desshalb hab das Boot mehrere geometrien, welche im code gespiegelt werden und die Normalen geflipped werden
 //Wenn ich noch dazu komme, werde ich im auch noch eine anpassbare Wandstärke geben, allerdings muss ich jetzt erst mal mein Seminararbeit machen :) 
+//Genauso wie Sitzflächen
+
+
+
+//Hiermit erlaube ich die Verwendung meines Codes für nichtkommerzielle Projekte, insbesondre für
+//zukünftige studentische Projektarbeiten oder im Rahmen der akademischen Lehre bzw.Forschung.
+//Mein Name muss bei Verwendung nicht als Urheber genannt werden
+//
+//Philipp Geirhos
 #include "CCustomBezierBoat.h"
 
 CCustomBezierBoat::CCustomBezierBoat(float lenght, float width, float height, float bugRoundness)
@@ -78,6 +87,30 @@ void CCustomBezierBoat::setBaseGeoWithWithMirrow(bool mirrow, CGeoBezierTable& g
 
 	geo.AddPatch(aav, 20, 20);
 
+
+////Sitz
+//
+//	aav[0][0] = CHVector(-1.5f, 0, 2.4);
+//	aav[1][0] = CHVector(-1.5f, 0, 2.4f);
+//	aav[2][0] = CHVector(-0.84f, 0, 2.4f);
+//	aav[3][0] = CHVector(0.0f, 0, 2.4f);
+//
+//	aav[0][1] = CHVector(-1.75f, 0, 1.875f);
+//	aav[1][1] = CHVector(-1.75f, 0, 1.875f);
+//	aav[2][1] = CHVector(-0.98f, 0, 1.875f);
+//	aav[3][1] = CHVector(0.0f, 0, 1.875f);
+//
+//	aav[0][2] = CHVector(-2.0f, 0, 1.35f);
+//	aav[1][2] = CHVector(-2.0f, 0, 1.35f);
+//	aav[2][2] = CHVector(-1.12f, 0, 1.35f);
+//	aav[3][2] = CHVector(0.0f, 0, 1.35f);
+//
+//	aav[0][3] = CHVector(-2.0f, 0, 0.9f);
+//	aav[1][3] = CHVector(-2.0f, 0, 0.9f);
+//	aav[2][3] = CHVector(-1.12f, 0, 0.9f);
+//	aav[3][3] = CHVector(0.0f, 0, 0.9f);
+
+	//geo.AddPatch(aav, 20, 20);
 	geo.SetMaterial(mat);
 
 	//Wenn die aufgebaute Geso gespielelt wurde, dann müssen noch ihre Normals gefliped werden
