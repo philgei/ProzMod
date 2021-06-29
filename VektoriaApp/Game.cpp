@@ -49,6 +49,8 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 	m_zs.AddPlacement(&m_Boat);
 	//Hütte
 	m_Hut.build();
+	m_Hut.Translate(-78, 4, -60);
+	
 	m_zs.AddPlacement(&m_Hut);
 
 }

@@ -13,8 +13,16 @@ public:
     CMaterial m_MatRoof;
 
     //Hierarchitektur
+    //Wing
     CGeoWing m_WingHut;
 
+    //Säulen an den Siten
+    CGeoWing m_aWingPillars[8];
+    CGeoCylinder m_aGeoPillars[8];
+    
+
+    //Grundriss
+    CHVectors m_MainPrint;
 
 
     //Tempel
