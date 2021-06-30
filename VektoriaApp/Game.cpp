@@ -59,7 +59,7 @@ void CGame::Tick(float fTime, float fTimeDelta)
 {
 	//m_zdk.PlaceWASD(m_zpCamera, fTimeDelta);
 
-	camPostForDebug = m_zpCamera.GetPos();
+	//camPostForDebug = m_zpCamera.GetPos();
 
 	m_zdk.PlaceWASDTerrain(
 		m_zpCamera,
