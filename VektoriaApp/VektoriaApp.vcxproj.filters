@@ -81,6 +81,12 @@
     <ClInclude Include="CGeoCustomTropicalHut.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="CCustomBioCoral.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustomBioGanja.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -132,6 +138,12 @@
       <Filter>Quelldateien\Oli</Filter>
     </ClCompile>
     <ClCompile Include="CGeoCustomTropicalHut.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CCustomBioCoral.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CCustomBioGanja.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

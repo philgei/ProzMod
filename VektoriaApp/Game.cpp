@@ -37,40 +37,46 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 
 	m_zv.SetBackfaceCullingOff();
 
+	//m_zv.SetWireframeOn();
 
 	m_zpCamera.SetTranslationSensitivity(50);
 	m_zpCamera.SetRotationSensitivity(1);
-	//Insel
-	m_pTropical.init();
-	m_zs.AddPlacement(&m_pTropical);
-	//Boot
-	m_Boat.Translate(-130.60f, 1.5f, -161.6);
-	m_Boat.Init();
-	m_zs.AddPlacement(&m_Boat);
-	//Hütte
-	m_Hut.build();
-	m_Hut.Translate(-78, 4, -60);
-	
-	m_zs.AddPlacement(&m_Hut);
+	////Insel
+	//m_pTropical.init();
+	//m_zs.AddPlacement(&m_pTropical);
+	////Boot
+	//m_Boat.Translate(-130.60f, 1.5f, -161.6);
+	//m_Boat.Init();
+	//m_zs.AddPlacement(&m_Boat);
+	////Hütte
+	//m_Hut.build();
+	//m_Hut.Translate(-78, 4, -60);
+	//m_zs.AddPlacement(&m_Hut);
+
+	//Koralle
+	m_Coral.grow();
+
+
+	m_zs.AddPlacement(&m_Coral);
 
 }
 
 void CGame::Tick(float fTime, float fTimeDelta)
 {
-	//m_zdk.PlaceWASD(m_zpCamera, fTimeDelta);
+	m_zdk.PlaceWASD(m_zpCamera, fTimeDelta);
 
 	//camPostForDebug = m_zpCamera.GetPos();
 
-	m_zdk.PlaceWASDTerrain(
-		m_zpCamera,
-		m_pTropical.m_gCol,
-		m_pTropical.m_gHeight,
-		m_pTropical.m_gsTerrain,
-		4.0f,
-		3000.0f,
-		m_HitpointCollision,
-		m_HitpointGround,
-		fTimeDelta);
+	//m_zdk.PlaceWASDTerrain(
+	//	m_zpCamera,
+	//	m_pTropical.m_gCol,
+	//	m_pTropical.m_gHeight,
+	//	m_pTropical.m_gsTerrain,
+	//	4.0f,
+	//	3000.0f,
+	//	m_HitpointCollision,
+	//	m_HitpointGround,
+	//	fTimeDelta);
 
 
 	m_zr.Tick(fTimeDelta);

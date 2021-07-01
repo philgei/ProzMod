@@ -33,6 +33,7 @@
 #include "CTropicalIsland.h"
 #include "CCustomBezierBoat.h"
 #include "CGeoCustomTropicalHut.h"
+#include "CCustomBioGanja.h"
 
 using namespace Vektoria;
 
@@ -79,6 +80,8 @@ private:
 	CTropicalIsland m_pTropical;
 	CCustomBezierBoat m_Boat = CCustomBezierBoat(16.0f, 5.0f, 1.5f, 0.8f);
 	CGeoCustomTropicalHut m_Hut;
+
+	CCustomBioGanja m_Coral;
 
 
 	CHVector camPostForDebug;
