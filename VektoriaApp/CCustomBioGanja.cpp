@@ -64,7 +64,7 @@ void CCustomBioGanja::grow()
 		
 
 
-	m_geoLeaf.Init(&m_matLeaf, true, true);
+	m_geoLeaf.Init(&m_matLeaf, false, true);
 	m_geoBio.SetGeoLeaf(&m_geoLeaf);
 
 
@@ -80,24 +80,9 @@ void CCustomBioGanja::grow()
 
 		m_geoBio.AddRule("A=fV");
 		m_geoBio.AddRule("V=(l2.0)[++<fK][++++<fK][++++++<fK]+++++(l0.48)fV");
-		m_geoBio.AddRule("K=(l2.0)[++<f(l0.5)h][++++<f(l0.5)h][++++++<f(l0.5)h]");
+		m_geoBio.AddRule("K=(l2.0)[++<f(l0.5)!h][++++++<f(l0.5)!h]");
 	}
 
-
-	
-
-
-
-	//m_geoBio.SetAxiom("A");
-
-
-	//m_geoBio.AddRule("X=YY");
-	//m_geoBio.AddRule("Y=F[<fh]f");
-
-
-	//m_geoBio.AddRule("A=/(l0.9)(r0.95)+f[<Z][>Z]A");
-	//m_geoBio.AddRule("Z=(l0.01)(r0.3)f(l50)X");
-	//m_geoBio.AddRule("X=!fh(l0.5)X");
 
 	m_geoBio.Create(7);
 

@@ -53,30 +53,45 @@ void CGame::Init(HWND hwnd, void(*procOS)(HWND hwnd, unsigned int uWndFlags), CS
 	//m_Hut.Translate(-78, 4, -60);
 	//m_zs.AddPlacement(&m_Hut);
 
-	//Koralle
-	m_Coral.grow();
+	m_Ganja.grow();
+	//m_Ganja.Drop(CHVector(40, 100, -68), m_pTropical.m_gsTerrain);
 
+	m_zs.AddPlacement(&m_Ganja);
 
-	m_zs.AddPlacement(&m_Coral);
+	////Plantage von Pflanzen erstellen
+	//{
+	//	size_t counter = 0;
+	//	for (size_t x = 0; x < 1; x++)
+	//	{
+	//		for (size_t z = 0; z < 1; z++)
+	//		{
+	//			counter++;
+	//			m_aGanja[counter].grow();
+	//			m_aGanja[counter].Drop(CHVector(40, 100, -68), m_pTropical.m_gsTerrain);
+	//			m_zs.AddPlacement(&m_aGanja[counter]);
+
+	//		}
+	//	}
+	//}
 
 }
 
 void CGame::Tick(float fTime, float fTimeDelta)
 {
-	m_zdk.PlaceWASD(m_zpCamera, fTimeDelta);
+	//m_zdk.PlaceWASD(m_zpCamera, fTimeDelta);
 
-	//camPostForDebug = m_zpCamera.GetPos();
+	camPostForDebug = m_zpCamera.GetPos();
 
-	//m_zdk.PlaceWASDTerrain(
-	//	m_zpCamera,
-	//	m_pTropical.m_gCol,
-	//	m_pTropical.m_gHeight,
-	//	m_pTropical.m_gsTerrain,
-	//	4.0f,
-	//	3000.0f,
-	//	m_HitpointCollision,
-	//	m_HitpointGround,
-	//	fTimeDelta);
+	m_zdk.PlaceWASDTerrain(
+		m_zpCamera,
+		m_pTropical.m_gCol,
+		m_pTropical.m_gHeight,
+		m_pTropical.m_gsTerrain,
+		4.0f,
+		3000.0f,
+		m_HitpointCollision,
+		m_HitpointGround,
+		fTimeDelta);
 
 
 	m_zr.Tick(fTimeDelta);

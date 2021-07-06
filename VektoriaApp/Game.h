@@ -80,8 +80,8 @@ private:
 	CTropicalIsland m_pTropical;
 	CCustomBezierBoat m_Boat = CCustomBezierBoat(16.0f, 5.0f, 1.5f, 0.8f);
 	CGeoCustomTropicalHut m_Hut;
-
-	CCustomBioGanja m_Coral;
+	//CCustomBioGanja m_aGanja[20];
+	CCustomBioGanja m_Ganja;
 
 
 	CHVector camPostForDebug;
